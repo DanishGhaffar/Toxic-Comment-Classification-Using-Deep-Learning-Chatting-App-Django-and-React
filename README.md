@@ -51,8 +51,10 @@ bash
 Always show details
 
 Copy code
+```bash
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\\Scripts\\activate
+source venv/bin/activate   
+
 Install the required dependencies:
 
 bash
