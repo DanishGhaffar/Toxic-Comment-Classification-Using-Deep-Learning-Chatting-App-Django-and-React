@@ -47,58 +47,36 @@ This project is a web-based application that uses a **Django backend** and a **R
    cd react-django-ai-chat/backend
 Create a virtual environment and activate it:
 
-bash
-Always show details
-
-Copy code
-```bash
-python -m venv venv
-source venv/bin/activate   
+  ```bash
+  python -m venv venv
+  source venv/bin/activate   
 
 Install the required dependencies:
-
-bash
 Always show details
 
-Copy code
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
 Run migrations:
+  ```bash
+  python manage.py makemigrations
+  python manage.py migrate
 
-bash
-Always show details
-
-Copy code
-python manage.py makemigrations
-python manage.py migrate
 Start the backend server:
+  ```bash
+  python manage.py runserver
 
-bash
-Always show details
-
-Copy code
-python manage.py runserver
 Frontend Setup (React):
 Navigate to the frontend directory:
 
-bash
-Always show details
-
-Copy code
-cd ../frontend
+  ```bash
+  cd ../frontend
 Install dependencies:
-
-bash
-Always show details
-
-Copy code
-npm install
+  ```bash
+  npm install
 Start the frontend server:
+  ```bash
+  npm start
 
-bash
-Always show details
-
-Copy code
-npm start
 Socket.IO Integration:
 Ensure that both the Django backend and React frontend are configured to communicate with the Socket.IO server. Update the relevant URLs in the configuration files.
 
