@@ -1,4 +1,5 @@
 # Toxic-Comment-Classification-Using-Deep-Learning-Chatting-App-Django-and-React
+
 This project is a web-based application that uses a **Django backend** and a **React frontend** to provide real-time messaging functionality. An AI model trained using **BERT Transformer** is integrated to classify messages as either toxic (6 categories) or non-toxic. The application utilizes **Socket.IO** for seamless real-time communication.
 
 ## Features
@@ -45,79 +46,86 @@ This project is a web-based application that uses a **Django backend** and a **R
    ```bash
    git clone https://github.com/your-username/react-django-ai-chat.git
    cd react-django-ai-chat/backend
-Create a virtual environment and activate it:
+   ```
 
-  ```bash
-  python -m venv venv
-  source venv/bin/activate   
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   
+   ```
 
-Install the required dependencies:
-Always show details
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-  ```bash
-  pip install -r requirements.txt
-Run migrations:
-  ```bash
-  python manage.py makemigrations
-  python manage.py migrate
+4. Run migrations:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
 
-Start the backend server:
-  ```bash
-  python manage.py runserver
+5. Start the backend server:
+   ```bash
+   python manage.py runserver
+   ```
 
-Frontend Setup (React):
-Navigate to the frontend directory:
+### Frontend Setup (React):
+1. Navigate to the frontend directory:
+   ```bash
+   cd ../frontend
+   ```
 
-  ```bash
-  cd ../frontend
-Install dependencies:
-  ```bash
-  npm install
-Start the frontend server:
-  ```bash
-  npm start
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Socket.IO Integration:
+3. Start the frontend server:
+   ```bash
+   npm start
+   ```
+
+### Socket.IO Integration:
 Ensure that both the Django backend and React frontend are configured to communicate with the Socket.IO server. Update the relevant URLs in the configuration files.
 
-Usage
-Open the application in your browser (usually at http://localhost:3000).
-Send a message through the chat interface.
-The AI model will classify the message as toxic (in one of six categories) or non-toxic.
-Experience real-time communication with instant message updates.
-AI Model Details
-Model: BERT Transformer
-Purpose: Classify user messages into toxic (6 categories) or non-toxic.
-Training: Pre-trained BERT model fine-tuned on a dataset of labeled messages.
-Integration: Model is hosted on the Django backend and processes messages via API calls.
-Contributing
+## Usage
+1. Open the application in your browser (usually at `http://localhost:3000`).
+2. Send a message through the chat interface.
+3. The AI model will classify the message as toxic (in one of six categories) or non-toxic.
+4. Experience real-time communication with instant message updates.
+
+## AI Model Details
+- **Model**: BERT Transformer
+- **Purpose**: Classify user messages into toxic (6 categories) or non-toxic.
+- **Training**: Pre-trained BERT model fine-tuned on a dataset of labeled messages.
+- **Integration**: Model is hosted on the Django backend and processes messages via API calls.
+
+## Contributing
 Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push your changes:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-Fork the repository.
-Create a new branch:
-bash
-Always show details
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-Copy code
-git checkout -b feature-name
-Make your changes and commit them:
-bash
-Always show details
+## Acknowledgments
+- **BERT Transformer**: For its exceptional performance in natural language processing tasks.
+- **Socket.IO**: For simplifying real-time communication.
+- **Django & React**: For providing robust and scalable development frameworks.
 
-Copy code
-git commit -m "Description of changes"
-Push your changes:
-bash
-Always show details
+---
 
-Copy code
-git push origin feature-name
-Open a pull request.
-License
-This project is licensed under the MIT License.
-
-Acknowledgments
-BERT Transformer: For its exceptional performance in natural language processing tasks.
-Socket.IO: For simplifying real-time communication.
-Django & React: For providing robust and scalable development frameworks.
-Feel free to reach out if you have any questions or feedback! """
+Feel free to reach out if you have any questions or feedback!
